@@ -1,0 +1,27 @@
+.rightdiv{
+    background-color: lightgray;
+    width: 74.3%;
+    float: left;
+    padding-left: 10px;
+}
+
+.leftdiv{
+    background-color: lightcyan;
+    width: 24.3%;
+    float: left;
+    padding-left: 10px;
+}
+
+.bottomleft{
+    background-color: lightblue;
+    width: 38.6%;
+    float: left;
+    padding: 10px;
+}
+
+.bottomright{
+    background-color: lightpink;
+    width: 58.7%;
+    float: left;
+    padding-left: 20px;
+}
