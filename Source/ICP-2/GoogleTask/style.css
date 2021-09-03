@@ -174,12 +174,14 @@ footer a:hover {
   text-decoration: underline;
 }
 
+
+
 .grid-container {
   display: inline-grid;
   grid-template-columns: 130px 130px 130px 130px;
   grid-template-rows: 100px 100px;
   grid-gap: 15px;
-  grid-row-gap: 30px;
+  grid-row-gap: 35px;
   grid-area: images;
   background-color: #ffffff;
   padding-top: 50px;
@@ -189,9 +191,17 @@ footer a:hover {
 
   width: 134px;
   display: block;
-  border-top: 1.2rem solid;
-  border-color: lightgray;
   border-radius: 2px;
+}
+.grid-container > div > p{
+
+  padding-left: 5px;
+  padding-top: 3px;
+  height: 20px;
+  font-size: 13px;
+  background-color: lightgray;
+  font-weight: bold;
+  color: black;
 }
 
 .grid-container > div > a > img {
@@ -209,5 +219,4 @@ footer a:hover {
   object-fit:cover;
   border-radius:50%;
 }
-
 
