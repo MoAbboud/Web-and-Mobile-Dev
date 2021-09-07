@@ -13,6 +13,7 @@
 .leftdiv{
     background-color: lightcyan;
     width: 24.3%;
+    height: 100%;
     float: left;
     padding-left: 10px;
 }

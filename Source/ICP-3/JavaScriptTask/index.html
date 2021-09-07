@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <title>Title</title>
+
+    <script>
+        function GetGameResponse(choice1) {
+            var arrayofChoice = ["Rock", "Paper", "Scissors"];
+
+            var computerOutput = Math.floor(Math.random() * 3);
+
+            if (arrayofChoice[computerOutput].toString() == "Rock") {
+                document.getElementById("CPO").style.background = '#008080';
+            } else if (arrayofChoice[computerOutput].toString() == "Paper") {
+                document.getElementById("CPO").style.background = '#DC143C';
+            } else if (arrayofChoice[computerOutput].toString() == "Scissors") {
+                document.getElementById("CPO").style.background = '#9ACD32';
+            }
+
+            document.getElementById("CPO").innerHTML = "Computer Output: " + arrayofChoice[computerOutput].toString();
+            document.getElementById("CPO").style.color = "#FFFFFF";
+            document.getElementById("MatchOutcome").style.color = "#FFFFFF";
+
+            document.getElementById("MatchOutcome").innerHTML = "";
+            if (choice1 == "Rock") {
+                document.getElementById("MatchOutcome").style.background = '#008080';
+                if (arrayofChoice[computerOutput].toString() == "Rock") {
+                    document.getElementById("MatchOutcome").innerHTML = "No winner, play again?";
+                } else if (arrayofChoice[computerOutput].toString() == "Paper") {
+                    document.getElementById("MatchOutcome").innerHTML = "Computer Wins!";
+                } else if (arrayofChoice[computerOutput].toString() == "Scissors") {
+                    document.getElementById("MatchOutcome").innerHTML = "Human Wins!";
+                }
+            } else if (choice1 == "Paper") {
+                document.getElementById("MatchOutcome").style.background = '#DC143C';
+                if (arrayofChoice[computerOutput].toString() == "Rock") {
+                    document.getElementById("MatchOutcome").innerHTML = "Human Wins!";
+                } else if (arrayofChoice[computerOutput].toString() == "Paper") {
+                    document.getElementById("MatchOutcome").innerHTML = "No winner, play again?";
+                } else if (arrayofChoice[computerOutput].toString() == "Scissors") {
+                    document.getElementById("MatchOutcome").innerHTML = "Computer Wins!";
+                }
+            } else if (choice1 == "Scissors") {
+                document.getElementById("MatchOutcome").style.background = '#9ACD32';
+                if (arrayofChoice[computerOutput].toString() == "Rock") {
+                    document.getElementById("MatchOutcome").innerHTML = "Computer Wins!";
+                } else if (arrayofChoice[computerOutput].toString() == "Paper") {
+                    document.getElementById("MatchOutcome").innerHTML = "Human Wins!";
+                } else if (arrayofChoice[computerOutput].toString() == "Scissors") {
+                    document.getElementById("MatchOutcome").innerHTML = "No winner, play again?";
+                }
+            }
+        }
+
+    </script>
+</head>
+<body>
+
+<div class="ImageDiv">
+    <button id="Rock" onclick="GetGameResponse('Rock')"></button>
+    <button id="Paper" onclick="GetGameResponse('Paper')"></button>
+    <button id="Scissors" onclick="GetGameResponse('Scissors')"></button>
+</div>
+<div class="LabelDiv">
+    <label id="CPO" class="FontLabel">Computer Output:</label>
+    <br>
+    <label id="MatchOutcome" class="FontLabel"></label>
+</div>
+</body>
+</html>

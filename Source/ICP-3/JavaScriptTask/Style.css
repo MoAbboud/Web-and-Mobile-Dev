@@ -1,0 +1,45 @@
+#Rock{
+
+    background-image: url("Images/Rock.png");
+    width: 217px;
+    height: 216px;
+    background-position: -2.3px;
+    border-radius: 33px;
+
+}
+
+#Paper{
+
+    background-image: url("Images/Paper.png");
+    width: 217px;
+    height: 216px;
+    background-position: -1px;
+    border-radius: 33px;
+
+}
+
+#Scissors{
+
+    background-image: url("Images/Scissors.png");
+    width: 217px;
+    height: 216px;
+    background-position: -1px;
+    border-radius: 33px;
+
+}
+
+.FontLabel{
+
+font-size: 30px;
+}
+
+.ImageDiv{
+    float: left;
+}
+
+.LabelDiv{
+    padding-top: 70px;
+    padding-left: 30px;
+    float:left;
+}
+
