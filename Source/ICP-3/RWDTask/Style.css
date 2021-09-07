@@ -15,3 +15,28 @@
     width: 1140px;
     height: 450px;
 }
+
+.AppHeader{
+
+    font-size: 35px;
+    color: #747704;
+}
+
+.row > div > h2{
+
+    font-size: 35px;
+    color: #BCBBBB;
+}
+
+.TopHeader{
+
+    font-size: 55px;
+    font-weight: bold;
+    color: #BCBBBB;
+}
+
+.BottomHeader{
+
+    font-size: 20px;
+    color: #BCBBBB!important;
+}
