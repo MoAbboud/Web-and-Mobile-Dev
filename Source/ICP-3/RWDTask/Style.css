@@ -6,8 +6,8 @@
 
 .TopImage{
 
-    width: 75px;
-    height: 100px;
+    width: 100px;
+    height: 130px;
 }
 
 .MidImage{
@@ -39,4 +39,11 @@
 
     font-size: 20px;
     color: #BCBBBB!important;
+}
+
+.rowSpecific{
+    border-bottom: solid 5px #BCBBBB;
+    padding-top: 30px;
+    margin-bottom: 40px;
+
 }

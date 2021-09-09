@@ -11,21 +11,13 @@
 
             var computerOutput = Math.floor(Math.random() * 3);
 
-            if (arrayofChoice[computerOutput].toString() == "Rock") {
-                document.getElementById("CPO").style.background = '#008080';
-            } else if (arrayofChoice[computerOutput].toString() == "Paper") {
-                document.getElementById("CPO").style.background = '#DC143C';
-            } else if (arrayofChoice[computerOutput].toString() == "Scissors") {
-                document.getElementById("CPO").style.background = '#9ACD32';
-            }
+            var pcChoice = arrayofChoice[computerOutput].toString();
+            document.getElementById(pcChoice.toString()).style.opacity = "1";
 
-            document.getElementById("CPO").innerHTML = "Computer Output: " + arrayofChoice[computerOutput].toString();
-            document.getElementById("CPO").style.color = "#FFFFFF";
-            document.getElementById("MatchOutcome").style.color = "#FFFFFF";
-
+            document.getElementById("MatchOutcome").style.color = "#000000";
             document.getElementById("MatchOutcome").innerHTML = "";
             if (choice1 == "Rock") {
-                document.getElementById("MatchOutcome").style.background = '#008080';
+                document.getElementById("HRock").style.opacity = "1";
                 if (arrayofChoice[computerOutput].toString() == "Rock") {
                     document.getElementById("MatchOutcome").innerHTML = "No winner, play again?";
                 } else if (arrayofChoice[computerOutput].toString() == "Paper") {
@@ -34,7 +26,7 @@
                     document.getElementById("MatchOutcome").innerHTML = "Human Wins!";
                 }
             } else if (choice1 == "Paper") {
-                document.getElementById("MatchOutcome").style.background = '#DC143C';
+                document.getElementById("HPaper").style.opacity = "1";
                 if (arrayofChoice[computerOutput].toString() == "Rock") {
                     document.getElementById("MatchOutcome").innerHTML = "Human Wins!";
                 } else if (arrayofChoice[computerOutput].toString() == "Paper") {
@@ -43,7 +35,7 @@
                     document.getElementById("MatchOutcome").innerHTML = "Computer Wins!";
                 }
             } else if (choice1 == "Scissors") {
-                document.getElementById("MatchOutcome").style.background = '#9ACD32';
+                document.getElementById("HScissors").style.opacity = "1";
                 if (arrayofChoice[computerOutput].toString() == "Rock") {
                     document.getElementById("MatchOutcome").innerHTML = "Computer Wins!";
                 } else if (arrayofChoice[computerOutput].toString() == "Paper") {
@@ -52,21 +44,47 @@
                     document.getElementById("MatchOutcome").innerHTML = "No winner, play again?";
                 }
             }
+            document.getElementById("HRock").disabled = true;
+            document.getElementById("HPaper").disabled = true;
+            document.getElementById("HScissors").disabled = true;
         }
 
+        function Reset(){
+            document.getElementById("Rock").style.opacity = "0.3";
+            document.getElementById("Paper").style.opacity = "0.3";
+            document.getElementById("Scissors").style.opacity = "0.3";
+
+            document.getElementById("HRock").style.opacity = "0.3";
+            document.getElementById("HPaper").style.opacity = "0.3";
+            document.getElementById("HScissors").style.opacity = "0.3";
+
+            document.getElementById("HRock").disabled = false;
+            document.getElementById("HPaper").disabled = false;
+            document.getElementById("HScissors").disabled = false;
+
+            document.getElementById("MatchOutcome").innerHTML = "Human! Select a hand!";
+        }
     </script>
 </head>
 <body>
 
 <div class="ImageDiv">
-    <button id="Rock" onclick="GetGameResponse('Rock')"></button>
-    <button id="Paper" onclick="GetGameResponse('Paper')"></button>
-    <button id="Scissors" onclick="GetGameResponse('Scissors')"></button>
+    <p>HUMAN:</p>
+    <button id="HRock" class="Rock"  onclick="GetGameResponse('Rock')"></button>
+    <button id="HPaper" class="Paper" onclick="GetGameResponse('Paper')"></button>
+    <button id="HScissors" class="Scissors" onclick="GetGameResponse('Scissors')"></button>
 </div>
-<div class="LabelDiv">
-    <label id="CPO" class="FontLabel">Computer Output:</label>
+
+<div class="ImageDiv">
+    <p>COMPUTER:</p>
+    <button id="Rock" class="Rock" ></button>
+    <button id="Paper" class="Paper"></button>
+    <button id="Scissors" class="Scissors"></button>
+</div>
+<div class="buttonlabel">
+    <label id="MatchOutcome" class="FontLabel">Human! Select a hand!</label>
     <br>
-    <label id="MatchOutcome" class="FontLabel"></label>
+    <button id="NewGame" class="NewGame" onclick="Reset()">New Game?</button>
 </div>
 </body>
 </html>
