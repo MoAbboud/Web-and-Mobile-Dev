@@ -7,16 +7,24 @@
 
     <script>
         function GetGameResponse(choice1) {
-            var arrayofChoice = ["Rock", "Paper", "Scissors"];
+            var arrayofChoice = ["Rock", "Paper", "Scissors"]; //Assigning an array with the choices
 
+            //Using Math.Random I want to get a number between 0 and 2
+            //Using Math.Floor I make sure that number isnt a decimal
             var computerOutput = Math.floor(Math.random() * 3);
 
+            //After getting the random number I use it to select one of the choice from the array
             var pcChoice = arrayofChoice[computerOutput].toString();
+            //Change the opacity for the button that will be the computers choice
             document.getElementById(pcChoice.toString()).style.opacity = "1";
 
             document.getElementById("MatchOutcome").style.color = "#000000";
             document.getElementById("MatchOutcome").innerHTML = "";
+            //Now that I have both the human and computer choice I can make the comparison
+            //to see who won the round.
             if (choice1 == "Rock") {
+                //Similarly for all the options
+                //Whichever choice the human chooses the button's opacity will change to 1
                 document.getElementById("HRock").style.opacity = "1";
                 if (arrayofChoice[computerOutput].toString() == "Rock") {
                     document.getElementById("MatchOutcome").innerHTML = "No winner, play again?";
@@ -44,12 +52,15 @@
                     document.getElementById("MatchOutcome").innerHTML = "No winner, play again?";
                 }
             }
+
+            //Disable the buttons so that the user can't click any other choice during the round
             document.getElementById("HRock").disabled = true;
             document.getElementById("HPaper").disabled = true;
             document.getElementById("HScissors").disabled = true;
         }
 
         function Reset(){
+            //Returning all buttons to their original opacity and enabling them for a new game.
             document.getElementById("Rock").style.opacity = "0.3";
             document.getElementById("Paper").style.opacity = "0.3";
             document.getElementById("Scissors").style.opacity = "0.3";
@@ -70,6 +81,7 @@
 
 <div class="ImageDiv">
     <p>HUMAN:</p>
+    //The human buttons, they contain the onclick functions.
     <button id="HRock" class="Rock"  onclick="GetGameResponse('Rock')"></button>
     <button id="HPaper" class="Paper" onclick="GetGameResponse('Paper')"></button>
     <button id="HScissors" class="Scissors" onclick="GetGameResponse('Scissors')"></button>
@@ -77,13 +89,17 @@
 
 <div class="ImageDiv">
     <p>COMPUTER:</p>
+    //The computer buttons, they don't have the functions
+    //because they are automatically set through JS
     <button id="Rock" class="Rock" ></button>
     <button id="Paper" class="Paper"></button>
     <button id="Scissors" class="Scissors"></button>
 </div>
 <div class="buttonlabel">
+    //Shows the details to the human about the winner or to start the game.
     <label id="MatchOutcome" class="FontLabel">Human! Select a hand!</label>
     <br>
+    //Button to start a new game.
     <button id="NewGame" class="NewGame" onclick="Reset()">New Game?</button>
 </div>
 </body>
