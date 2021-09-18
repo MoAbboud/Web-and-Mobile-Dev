@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src='https://code.jquery.com/jquery-3.3.1.min.js'> </script>
+    <script>
+
+        /*Name this external file hover_script.js*/
+
+        function upDate(previewPic){
+            /* In this function you should
+               1) change the url for the background image of the div with the id = "image"
+               to the source file of the preview image
+
+               2) Change the text  of the div with the id = "image"
+               to the alt text of the preview image
+               */
+
+            //Using JavaScript I am able to get the ID of the div that I want to modify.
+            //Once I have the ID i can reference the background image and assign it a new URL
+            //the url of the parameter that is passed through the function
+            document.getElementById("image").style.backgroundImage = "url(" + previewPic.src.toString() + ")";
+            //I set the background image of the center image to the src of the hovered over image.
+            document.getElementById("image").innerHTML = previewPic.alt.toString();
+            //I also set the innerHtml of the image to take the alt attribute value of the hovered over image.
+
+        }
+
+        function unDo(){
+            /* In this function you should
+           1) Update the url for the background image of the div with the id = "image"
+           back to the orginal-image.  You can use the css code to see what that original URL was
+
+           2) Change the text  of the div with the id = "image"
+           back to the original text.  You can use the html code to see what that original text was
+           */
+            //Also using javascript, I reset the the inner html and the image back to the original.
+            document.getElementById("image").innerHTML = "Hover over an image below to display here.";
+            //I reset the innerHtml of the image back to original when the mouse is not hoved over on of the images
+            document.getElementById("image").style.backgroundImage = "url('https://cdn.sallysbakingaddiction.com/" +
+                "wp-content/uploads/2021/09/apple-cinnamon-quick-bread-600x900.jpg')";
+            //Also the image is rest back to original
+        }
+
+    </script>
+</head>
+<body>
+
+<div id = "image">
+    Hover over an image below to display here.
+</div>
+
+<img class = "preview" alt = "Batter is ready"
+     src = "https://cdn.sallysbakingaddiction.com/wp-content/uploads/2017/06/moist-chocolate-cupcakes-7.jpg"
+     onmouseover = "upDate(this)" onmouseout = "unDo()">
+
+<img class = "preview" alt = "Perfect Baking"
+     src = "https://cdn.sallysbakingaddiction.com/wp-content/uploads/2017/06/moist-chocolate-cupcakes-6.jpg"
+     onmouseover = "upDate(this)" onmouseout = "unDo()">
+
+<img class = "preview" alt = "Yummy yummy cup cake"
+     src = "https://cdn.sallysbakingaddiction.com/wp-content/uploads/2017/06/moist-chocolate-cupcakes-5.jpg"
+     onmouseover = "upDate(this)" onmouseout = "unDo()">
+
+</body>
+</html>

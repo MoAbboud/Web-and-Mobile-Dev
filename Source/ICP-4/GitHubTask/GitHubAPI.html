@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GitHubAPI App</title>
+    <link rel="stylesheet" href="Style.css">
+    <meta content="text/html; charset=windows-1252" http-equiv="Content-Type">
+    <meta content='maximum-scale=1.0, initial-scale=1.0, width=device-width' name='viewport'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+          crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+            integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+            integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+            crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        $(function () {
+            $("#Submit").click(function (e) {
+
+                var result;
+                e.preventDefault(); //to stop refreshing the page
+                $.ajax({ //Starting the API call
+                    type: 'GET', //Setting the TYPE because we only need read-only data
+                    url: 'https://api.github.com/users/' + $('#username').val(), //The url that is used to get the user information
+                    data: 'json', // set the type of the data that will be returned,
+                    success: function (data) { //store all request in the data object
+                        console.log('success', data);
+                        $("#login").append(data.login); // Get login data
+                        $("#userID").append(data.id); // Get the user ID
+                        $("#userlink").attr("href", data.html_url); // Get the url for the user
+                        $("#userlink").html(data.html_url); // Get the url for the user
+                        $("#RepoNumber").html(data.public_repos); // Get the url for the user
+                        $("#avatar").attr("src", data.avatar_url); // get the avatar_url
+                        $("#avatar").attr("display", "inline"); // set the display attribute of the avatar to be visible
+                        $("#avatar").fadeOut(); //add some visual effects to the image when it is created
+                        $("#avatar").delay(200).fadeIn();
+                    },
+                    error: function (data) {
+                        console.log('error' + $('#username').val()); //in case of an error it will display what the error is
+                    }
+                });
+                e.preventDefault(); //to stop refreshing the page
+                return result;
+            });
+        });
+    </script>
+
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row text-center">
+        <h1>GitHub API </h1>
+    </div>
+    <div class="row text-center">
+        <div class="col-md-12">
+            <label>Enter Username:</label>
+            <input id="username" type="text">
+            <button id="Submit">Submit</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 text-end">
+            <label>Avatar: </label>
+        </div>
+        <div class="col-md-6 text-start">
+            <img class="img-fluid" id="avatar" alt="avatar">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 text-end">
+            <label>Login: </label>
+        </div>
+        <div class="col-md-6 text-start">
+            <label id="login"></label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 text-end">
+            <label>User ID: </label>
+        </div>
+        <div class="col-md-6 text-start">
+            <label id="userID"></label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 text-end">
+            <label>User Link: </label>
+        </div>
+        <div class="col-md-6 text-start">
+            <a id="userlink"></a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 text-end">
+            <label>Number of Repos: </label>
+        </div>
+        <div class="col-md-6 text-start">
+            <a id="RepoNumber"></a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
