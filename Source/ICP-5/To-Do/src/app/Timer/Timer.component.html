@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+    <div class="timer">
+      <span id="days"> {{daysToDday}} </span>Day(s)
+      <span id="hours"> {{hoursToDday}} </span>Hrs
+      <span id="minutes"> {{minutesToDday}} </span>Min
+      <span id="seconds"> {{secondsToDday}} </span>S
+    </div>
+    <div class="row">
+      <div class="col-md-7">
+        <input type="datetime-local" (input)="getTime($event)"/>
+        <p>Selected Time: {{date}}</p>
+      </div>
+    </div>
+  </div>
+</div>

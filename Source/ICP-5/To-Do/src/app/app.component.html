@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-3 align-items-center">
+          To-Do List:
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-3 align-items-center">
+      <input [(ngModel)]="newTask" type="text" value="" class="form-control">
+    </div>
+    <div class="col-md-3 align-items-center">
+      <button (click)="addToList()" class="btn btn-light text-success"> ADD TASK </button>
+    </div>
+  </div>
+
+  <div *ngFor="let x of items; let index = index;" class="row DeleteRow">
+    <div class="col-3 align-items-center">
+      {{x}}
+    </div>
+    <div class="col-6 align-items-center">
+      <input (click)="deleteTask(index)" type="button" value="    Delete   " class="btn btn-light text-danger">
+    </div>
+  </div>
+
+  <br><br><br>
+  <app-timer></app-timer>
+</div>
