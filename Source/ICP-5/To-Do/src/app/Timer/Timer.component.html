@@ -7,8 +7,13 @@
       <span id="seconds"> {{secondsToDday}} </span>S
     </div>
     <div class="row">
-      <div class="col-md-7">
-        <input type="datetime-local" (input)="getTime($event)"/>
+      <div class="col-md-3">
+        <input class="form-control-sm" type="datetime-local" (input)="getTime($event)"/>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
         <p>Selected Time: {{date}}</p>
       </div>
     </div>
