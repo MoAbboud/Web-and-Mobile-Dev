@@ -35,3 +35,4 @@ export class AppComponent {
     this.items.splice(index, 1);
   }
 }
+
