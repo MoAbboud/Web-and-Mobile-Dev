@@ -77,7 +77,10 @@ const appRoutes: Routes = [
     MatFormFieldModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent,BookComponent,
+    BookDetailComponent,
+    BookCreateComponent,
+    BookEditComponent]
 })
 export class AppModule {
 }
