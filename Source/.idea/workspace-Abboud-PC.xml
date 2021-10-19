@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="abcc8b53-b7d6-4a43-920b-b80f0d418cb8" name="Changes" comment="new">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1xV5J8LOGtS4p1cNWM6KMPkxSdL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Desktop/Webmobile/Web_Lesson5/Usecase/memory-game" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="ts.external.directory.path" value="C:\Users\Absol\OneDrive\Documents\GitHub\Web-and-Mobile-Dev\Source\ICP-7\LibraryManagementSystem\node_modules\typescript\lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Absol\OneDrive\Documents\GitHub\Web-and-Mobile-Dev\Source\ICP-6\APITask\src\app\API" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Node.js.mongodb_drop_collection.js">
+    <configuration name="mongodb_drop_collection.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/ICP-7/MongoDB/mongodb_drop_collection.js" working-dir="$PROJECT_DIR$/ICP-7/MongoDB">
+      <method v="2" />
+    </configuration>
+    <configuration name="mongodb_find.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/ICP-7/MongoDB/mongodb_find.js" working-dir="$PROJECT_DIR$/ICP-7/MongoDB">
+      <method v="2" />
+    </configuration>
+    <configuration name="mongodb_insert.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/ICP-7/MongoDB/mongodb_insert.js" working-dir="$PROJECT_DIR$/ICP-7/MongoDB">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.mongodb_drop_collection.js" />
+        <item itemvalue="Node.js.mongodb_find.js" />
+        <item itemvalue="Node.js.mongodb_insert.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="abcc8b53-b7d6-4a43-920b-b80f0d418cb8" name="Changes" comment="" />
+      <created>1630427342056</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1630427342056</updated>
+      <workItem from="1630427343776" duration="2183000" />
+      <workItem from="1630526998010" duration="15067000" />
+      <workItem from="1630596965063" duration="5198000" />
+      <workItem from="1630620940572" duration="8793000" />
+      <workItem from="1630699258244" duration="7669000" />
+      <workItem from="1630713841730" duration="2184000" />
+      <workItem from="1630808191160" duration="3000" />
+      <workItem from="1630961414439" duration="9845000" />
+      <workItem from="1631026350894" duration="4639000" />
+      <workItem from="1631048042753" duration="9252000" />
+      <workItem from="1631142504451" duration="8583000" />
+      <workItem from="1631221147343" duration="5410000" />
+      <workItem from="1631230001805" duration="5742000" />
+      <workItem from="1631308461964" duration="5116000" />
+      <workItem from="1631384018103" duration="9904000" />
+      <workItem from="1631553322845" duration="11313000" />
+      <workItem from="1631814973433" duration="406000" />
+      <workItem from="1631823788482" duration="4837000" />
+      <workItem from="1631831809283" duration="10712000" />
+      <workItem from="1631909625206" duration="5257000" />
+      <workItem from="1631918563861" duration="562000" />
+      <workItem from="1631976122544" duration="6171000" />
+      <workItem from="1632058358121" duration="1630000" />
+      <workItem from="1632157830317" duration="13463000" />
+      <workItem from="1632246885057" duration="125000" />
+      <workItem from="1632261439189" duration="573000" />
+      <workItem from="1632411074282" duration="5360000" />
+      <workItem from="1632439479043" duration="13762000" />
+      <workItem from="1632488029311" duration="10660000" />
+      <workItem from="1632516704336" duration="2762000" />
+      <workItem from="1632524383350" duration="13663000" />
+      <workItem from="1632696964372" duration="1705000" />
+      <workItem from="1632762226146" duration="39000" />
+      <workItem from="1632762275055" duration="17083000" />
+      <workItem from="1632784393588" duration="5535000" />
+      <workItem from="1632945889078" duration="9000" />
+      <workItem from="1633049027494" duration="1476000" />
+      <workItem from="1633053421228" duration="699000" />
+      <workItem from="1633058497497" duration="1080000" />
+      <workItem from="1633110626102" duration="224000" />
+      <workItem from="1633112563535" duration="1508000" />
+      <workItem from="1633121630341" duration="10458000" />
+      <workItem from="1633368432889" duration="13158000" />
+      <workItem from="1633396683906" duration="3317000" />
+      <workItem from="1633445210053" duration="3325000" />
+      <workItem from="1633712566600" duration="16149000" />
+      <workItem from="1633740015400" duration="269000" />
+      <workItem from="1633740893809" duration="464000" />
+      <workItem from="1633741500987" duration="288000" />
+      <workItem from="1633915268977" duration="1265000" />
+      <workItem from="1634307208342" duration="598000" />
+      <workItem from="1634328241849" duration="4000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/ICP-6/MashUp" />
+    </ignored-roots>
+    <MESSAGE value="new" />
+    <option name="LAST_COMMIT_MESSAGE" value="new" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
