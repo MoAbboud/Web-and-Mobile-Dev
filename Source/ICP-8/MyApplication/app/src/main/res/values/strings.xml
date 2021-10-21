@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Simple Login</string>
+    <string name="login_screen">Login Screen</string>
+    <string name="Username">Username</string>
+    <string name="Password">Password</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="welcome">Welcome to Main Menu</string>
+</resources>
