@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="107dp"
+        android:layout_height="64dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="388dp"
+        android:layout_marginEnd="249dp"
+        android:layout_marginBottom="620dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnRemove"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:backgroundTint="#939292"
+            android:onClick="Subtract"
+            android:text="-"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tbQuantity"
+            android:layout_width="25dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:text="1"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:backgroundTint="#9E9E9E"
+            android:onClick="Add"
+            android:text="+"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/cbPeppers"
+        android:layout_width="135dp"
+        android:layout_height="54dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="268dp"
+        android:layout_marginEnd="234dp"
+        android:layout_marginBottom="769dp"
+        android:text="Peppers"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="141dp"
+        android:layout_height="32dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="343dp"
+        android:layout_marginEnd="230dp"
+        android:layout_marginBottom="701dp"
+        android:text="Quantity:"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <CheckBox
+        android:id="@+id/cbPepperoni"
+        android:layout_width="137dp"
+        android:layout_height="54dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="203dp"
+        android:layout_marginTop="267dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="767dp"
+        android:text="Pepperoni"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/tbSummary"
+        android:layout_width="139dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="471dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginBottom="541dp"
+        android:onClick="Summary"
+        android:text="Summary" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="156dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="146dp"
+        android:layout_marginEnd="212dp"
+        android:text="Ingredients:"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <CheckBox
+        android:id="@+id/cbMushroom"
+        android:layout_width="140dp"
+        android:layout_height="54dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="204dp"
+        android:layout_marginEnd="228dp"
+        android:layout_marginBottom="840dp"
+        android:text="Mushroom"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/tbOrder"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="472dp"
+        android:layout_marginEnd="263dp"
+        android:layout_marginBottom="543dp"
+        android:onClick="Order"
+        android:text="Order" />
+
+    <CheckBox
+        android:id="@+id/cbCheese"
+        android:layout_width="127dp"
+        android:layout_height="54dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="205dp"
+        android:layout_marginTop="204dp"
+        android:layout_marginEnd="79dp"
+        android:layout_marginBottom="840dp"
+        android:text="Cheese"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="133dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="541dp"
+        android:layout_marginEnd="233dp"
+        android:layout_marginBottom="485dp"
+        android:text="Thank you!"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/tbName"
+        android:layout_width="404dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="988dp"
+        android:ems="10"
+        android:hint="Name:"
+        android:inputType="textPersonName" />
+</RelativeLayout>
