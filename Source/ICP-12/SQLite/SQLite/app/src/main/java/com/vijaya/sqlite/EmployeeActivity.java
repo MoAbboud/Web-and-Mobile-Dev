@@ -121,8 +121,8 @@ public class EmployeeActivity extends AppCompatActivity {
         TextView ID = (TextView) parent.getChildAt(0);
 
         SQLiteDatabase database = new SampleDBSQLiteHelper(this).getReadableDatabase();
-        String[] selectionArgs = {"%" + ID.getText() + "%"};
-        database.delete(SampleDBContract.Employee.TABLE_NAME,"_ID =" + ID.getText(), selectionArgs);
+        String[] selectionArgs = { ID.getText().toString()};
+        database.delete(SampleDBContract.Employee.TABLE_NAME,"_ID =?", selectionArgs);
         readFromDB();
     }
 
@@ -135,10 +135,9 @@ public class EmployeeActivity extends AppCompatActivity {
         values.put(SampleDBContract.Employee.COLUMN_FIRSTNAME, binding.firstnameEditText.getText().toString());
         values.put(SampleDBContract.Employee.COLUMN_LASTNAME, binding.lastnameEditText.getText().toString());
 
-        String[] selectionArgs = {"%" + binding.firstnameEditText.getText().toString() + "%",
-                "%" + binding.lastnameEditText.getText().toString() + "%"};
+        String[] selectionArgs = { ID.getText().toString()};
 
-        database.update(SampleDBContract.Employee.TABLE_NAME, values, "_ID =" + ID.getText(), selectionArgs);
+        database.update(SampleDBContract.Employee.TABLE_NAME, values, "_ID =?", selectionArgs);
 
     }
 }
