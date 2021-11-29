@@ -127,6 +127,7 @@ public class EmployeeActivity extends AppCompatActivity {
     }
 
     public void UpdateFromDB(@NonNull View view) {
+        //test comment
         ViewGroup parent = (ViewGroup) view.getParent();
         TextView ID = (TextView) parent.getChildAt(0);
         SQLiteDatabase database = new SampleDBSQLiteHelper(this).getWritableDatabase();
